@@ -28,10 +28,10 @@ if [ ! "$SKIP_INSTALL" ]; then
     # Prepare destination directory.
     mkdir -p .heroku/python
 
-    curl http://dev.patrickjahns.de/python/${PYTHON_VERSION}_x86.tar.gz -s | tar zxv -C .heroku/python &> /dev/null
+    curl https://github.com/patrickjahns/python-herokuish-x86-packages/raw/dist/dist/${PYTHON_VERSION}_x86.tar.gz -s | tar zxv -C .heroku/python &> /dev/null
     if [[ $? != 0 ]] ; then
-      puts-warn "Requested runtime ($PYTHON_VERSION) is not available for this stack ($STACK)."
-      puts-warn "Aborting.  More info: https://devcenter.heroku.com/articles/python-support"
+      puts-warn "Requested runtime ($PYTHON_VERSION) is not available."
+      puts-warn "Aborting.  Check runtimes at: https://github.com/patrickjahns/python-herokuish-x86-packages/blob/dist/python-versions.txt"
       exit 1
     fi
 
