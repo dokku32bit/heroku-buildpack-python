@@ -1,7 +1,7 @@
 Dokku x86 buildpack: Python
 ========================
 
-This is buildpack is based on the original Heroku Python buildpack ([https://github.com/heroku/heroku-buildpack-python]). The python runtimes have been replaced with x86 ones
+This is buildpack is based on the original Heroku Python buildpack ([https://github.com/heroku/heroku-buildpack-python]). The python runtimes have been replaced with x86 ones create with pyenv (python-build). 
 
 
 Provided Runtimes
