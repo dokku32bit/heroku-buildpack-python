@@ -7,9 +7,8 @@ This is buildpack is based on the original [Heroku Python buildpack](https://git
 Provided Runtimes
 -----------------
 
-Runtimes are hosted on Github
 For a list of runtimes please check [python-versions.txt](https://github.com/patrickjahns/python-herokuish-x86-packages/blob/dist/python-versions.txt)
 
-The hosted runtimes are not intended for production use. If you want to use it in production, please download the runtimes and host them yourself. Don`t forget to modify [bin/steps/python](bin/steps/python) to link to your private repository
+Runtimes are hosted on Github and not intended for production use. If you want to use it in production, please download the runtimes and host them yourself. Don`t forget to modify [bin/steps/python](bin/steps/python) to link to your private repository
 
 
